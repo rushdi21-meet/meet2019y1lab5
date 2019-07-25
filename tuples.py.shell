@@ -1,0 +1,34 @@
+Python 3.6.7 (default, Oct 22 2018, 11:32:17) 
+[GCC 8.2.0] on linux
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> x,y,z = (3,4,5)
+>>> my_tuple = (3,4,5)
+>>> print(x*3)
+9
+>>> print(my_tuple*3)
+(3, 4, 5, 3, 4, 5, 3, 4, 5)
+>>>  print(my_tuple[0]==x)
+SyntaxError: unexpected indent
+>>> print(x[0])
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    print(x[0])
+TypeError: 'int' object is not subscriptable
+>>> my_tuple[0]=17
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    my_tuple[0]=17
+TypeError: 'tuple' object does not support item assignment
+>>> x=17
+>>> print(x)
+17
+>>> import turtle
+>>> print(turtle.pos())
+(0.00,0.00)
+>>> print(type(turtle.pos()))
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    print(type(turtle.pos()))
+  File "<string>", line 5, in pos
+turtle.Terminator
+>>> 
